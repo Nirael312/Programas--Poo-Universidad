@@ -90,7 +90,7 @@ public class Personaje {
                 case 2 -> espada = 10;
                 default -> System.out.println("Número de arma incorrecta");
             }
-            // scanner.close(); // Comentado para no cerrar el scanner en el contexto de la entrada estándar
+             scanner.close(); // Comentado para no cerrar el scanner en el contexto de la entrada estándar
         }
 
         @Override

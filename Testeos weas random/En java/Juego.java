@@ -23,10 +23,14 @@ public class Juego {
     public static void main(String[] args) {
         Personaje.Guerrero personaje1 = new Personaje.Guerrero("Guts", 20, 10, 4, 100, 4);
         Personaje.Mago personaje2 = new Personaje.Mago("Vanessa", 5, 15, 4, 100, 3);
+        Personaje.Guerrero personaje3 = new Personaje.Guerrero("Rox", 20, 5, 20, 300, 2);
+        
 
         personaje1.atributos();
         personaje2.atributos();
+        personaje3.atributos();
+        
 
-        combate(personaje1, personaje2);
+        combate(personaje1, personaje3);
     }
 }
