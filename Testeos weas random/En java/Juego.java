@@ -24,7 +24,7 @@ public class Juego {
         Personaje.Guerrero personaje1 = new Personaje.Guerrero("Guts", 20, 10, 4, 100, 4);
         Personaje.Mago personaje2 = new Personaje.Mago("Vanessa", 5, 15, 4, 100, 3);
         Personaje.Guerrero personaje3 = new Personaje.Guerrero("Rox", 20, 5, 20, 300, 2);
-        
+        Personaje.Mago personaje4 = new Personaje.Mago("Diego", 40, 20, 5, 10, 2);
 
         personaje1.atributos();
         personaje2.atributos();
