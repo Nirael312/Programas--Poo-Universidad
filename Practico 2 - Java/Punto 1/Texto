@@ -1,0 +1,8 @@
+1. Desarrolle los criterios de encapsulamiento y acceso disponibles ¿Por qué se hace
+esto?
+
+-Encapsulamiento: Sirve para ocultar informacion, consiste en restringir el acceso de cierta informacion por fuera de la clase, pero 
+       manteniendo su acceso dentro de ella, lo cual permite crear metodos que si permitan su acceso pero a criterio del programador
+
+-Cosas asi se hacen para evitar que algun mal cambio afecte a ciertas zonas relacionadas a ella, de formas imprevistas, solo 
+       pudiendo acceder a dichas zonas mediante los metodos que si accedan a esos atributos

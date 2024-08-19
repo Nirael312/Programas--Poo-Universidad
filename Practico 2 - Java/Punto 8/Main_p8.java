@@ -8,16 +8,17 @@ public class Main_p8 {
     
     public static void main(String[] args) {
         
-        String rta = "Si";
+        int rta = 1;
 
-        List<Persona8> listas  = new ArrayList<>();
+        List<Persona8> listas = new ArrayList<>();
 
         //Persona8 persona1 = new Persona8("Paco", 14, 'M', "Estudiante");
         //listas.add(persona1);
 
         System.out.println("xddd ando bien, quiero plata");
-        
-        while (rta == "Si") {
+        Scanner teclado = new Scanner(System.in);
+
+        while (rta == 1) {
 
         Persona8 persona1 = new Persona8();
         persona1.pregunto_datos();
@@ -27,13 +28,13 @@ public class Main_p8 {
         persona1.muestro_info();
         System.out.println("");
 
-        System.out.println("Otra persona? Pulse Si o No: ");
-        Scanner teclado = new Scanner(System.in);
-        rta = teclado.nextLine();
-        teclado.close();
+        System.out.println("Otra persona? Pulse 1 para Si o 2 para No: ");
 
+        rta = teclado.nextInt();
+        teclado.nextLine();
         }
-
+        teclado.close();
+        
     }
 
 }

@@ -1,0 +1,40 @@
+
+3- Corrija el siguiente programa para que funcione realizando la mínima cantidad de
+cambios y solo en la clase Alumno
+
+public class Alumno3 {
+    
+    private String nombre = " ";
+    private String apellido = " ";
+    private int dni = 0;
+
+    public Alumno3() {
+
+    }
+
+    public Alumno3(String nombre, String apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+}
+
+public class App3 {
+    public static void main (String[] args) throws Exception {
+
+        Alumno3 alumno1 = new Alumno3();
+        alumno1.setNombre = "Alejandro";
+        alumno1.setApellido = "Rojas";
+        alumno1.setDni = (11111111);
+
+        Alumno3 alumno2 = new Alumno3("Martin", "Rosales");
+        alumno2.setDni = (11111111);
+
+        System.out.printIn(alumno1.setNombreYapellido() + " - DNI: " + alumno1.getDNI());
+        System.out.printIn(alumno2.setNombreYapellido() + " - DNI: " + alumno2.getDNI());
+
+    }
+
+}
+
+// correciones - que flojera xd, igual es facil causa, hacer todos los set y get, quitar las asignaciones ya que son atributos privados,
+// y quitar los contructores extras que estan ahi, bah, creo jsjs, 

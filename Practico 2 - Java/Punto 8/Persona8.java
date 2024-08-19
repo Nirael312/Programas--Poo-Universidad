@@ -26,7 +26,6 @@ public class Persona8 {
         this.edad = teclado.nextInt();
         System.out.print("");
 
-
         System.out.print("Estudia o trabaja? Pulse 1 o 2 respectivamente: ");
         int opcion = teclado.nextInt();
         

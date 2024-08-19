@@ -1,0 +1,57 @@
+
+//2. En base a lo desarrollado en el punto anterior, corrija la siguiente clase para que cumpla
+//con los criterios del Encapsulamiento y acceso necesarios dada la situación de uso
+//posterior.
+
+public class Cancion {
+
+    public String nombre = ""; 
+    public String autor = "";
+    public double duracion = 0.0;
+
+}
+
+public class App {
+
+    public static void main(String[] args) throws Exception {
+
+        Cancion cancion = new Cancion();
+        cancion.nombre = "un velero llamado libertad";
+        cancion.autor = "Jose Luis Peralez";
+        cancion.duracion = 222.0;
+
+        System.out.println(cancion.nombre);
+        System.out.println(cancion.autor);
+        System.out.println(cancion.duracion);
+
+    }
+}
+
+// correciones para cumplir el encapsulamiento y sus ventajas
+
+public class Cancion2 {
+    private String nombre;
+    private String autor;
+    private double duracion;
+
+    public Cancion2(String nombre, String autor, double duracion) {
+        this.nombre = nombre;
+        this.autor = autor;
+        this.duracion = duracion;
+    }
+    public muestro_datos() {
+        System.out.println("nombre: " + nombre);
+        System.out.println("cancion: " + cancion);
+        System.out.println("Duracion: " + duracion);
+    }
+}
+
+public class App2 {
+
+    public static void main (String[] args) throws Exception {
+        
+        Cancion2 cancion = new Cancion2("un velero llamado libertad", "Jose Luis Peralez", 222.0);
+        cancion.muestro_datos();
+        
+    }
+}

@@ -29,6 +29,7 @@ public class Juego {
         personaje1.atributos();
         personaje2.atributos();
         personaje3.atributos();
+        personaje4.atributos();
         
 
         combate(personaje1, personaje3);
